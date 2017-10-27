@@ -203,7 +203,7 @@ nav {
 .contac-me {
   text-align: center;
   width: inherit;
-  height: 937px;
+  height: 800px;
 }
 
 form {
@@ -250,6 +250,7 @@ float: left;
 /***FOOTER**/
 
 footer {
+height: 350px;
   background-color: #2c3e50;
   color: white;
   font-family: 'Lato', sans-serif;
@@ -257,18 +258,63 @@ footer {
 }
 
 
-
-.information {
-  width: inherit;
-  height: 269px;
-  display: inline-block;
+.text-information{
+  outline: 1px solid red;
+overflow: auto;
+padding: 0;
+height: 250px;
 }
+
+
 
 .copyright {
   outline: 1px solid orange;
   width: inherit;
-  height: 74px;
+  height: 100px;
   text-align: center;
+
+}
+
+.location , .social , .freelancer {
+  outline: 1px solid yellow;
+  width: 380px;
+  height: 130px;
+  float: left;
+  text-align: center;
+  transform: translateX(10%);
+  margin: 50px 20px;
+}
+
+.icons-social {
+
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 13px;
+
+}
+
+.icons-social a i {
+  font-size: 20px;
+}
+
+.text-information h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-information p {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 1.5
+}
+
+.social p ul {
 
 }
 
