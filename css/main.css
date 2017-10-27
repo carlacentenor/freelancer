@@ -14,24 +14,16 @@ body {
 }
 
 header {
-
   position: fixed;
-
   background-color: #2c3e50;
   width: inherit;
   height: 108px;
-}
-
-.conteiner {
-  width: inherit;
-  height: 108px;
-  position: relative;
+  z-index: 1;
 }
 
 nav, .title {
   display: inline-block;
   margin: 0 auto;
-  position: absolute;
 }
 
 a {
@@ -46,96 +38,240 @@ a {
 ul li {
   list-style: none;
   display: inline-block;
-  padding: 5px;
+  padding-right: 13px;
 }
 
 nav {
-  right: 119px;
-  top: 50%;
+  float: right;
+  margin: 53px 115px 50px 0;
   transform: translateY(-50%);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 .title {
-  left: 119px;
-  top: 50%;
+  float: left;
+  margin: 53px 0 50px 120px;
   transform: translateY(-50%);
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
 
-
- .star:after{
-   content: '';
-     width: 5%;
-     height: 5px;
-   background-color: black;
-   display: inline-block;
-
-}
-/***MAIN**/
+/***SECTION **/
 
 .initial {
   outline: 1px solid blue;
   width: inherit;
-  height: 883px;
+  height: 790px;
   background-color: #18bc9c;
   text-align: center;
   color: #ffffff;
 }
 
-.profile-img {
-  padding-top: 200px;
+/******SEPARADOR DE ESTRELLA*****/
+
+.star:after, .star:before {
+  content: '';
+  width: 7%;
+  height: 5px;
+  background-color: white;
+  display: inline-block;
 }
 
-.initial span {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 35px;
+.star span {
+  position: relative;
+  top: 9.5px;
+  margin: 8px;
+  font-size: 30px;
+}
+
+/********************/
+
+.profile-img {
+  padding-top: 200px;
 }
 
 .initial h1 {
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 73px;
+  font-size: 76px;
 }
 
 .initial p {
   font-family: 'Lato', sans-serif;
-  font-size: 27px;
-  margin-top: 5px;
+  font-size: 28px;
+  margin-top: 30px;
 }
+
+/*******SECTION 2********/
 
 .portfolio {
   width: inherit;
-  height: 578px;
-  outline: 1px solid blue;
+  height: 785px;
+  color: #212529;
+  text-align: center;
 }
+
+.portfolio h1, .contac-me h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 100px 0 0 0;
+}
+
+.starblack {
+  color: #2c3e50;
+}
+
+.star-2:after, .star-2:before {
+  content: '';
+  width: 7%;
+  height: 5px;
+  background-color: #2c3e50;
+  display: inline-block;
+}
+
+.star-2 span {
+  position: relative;
+  top: 9.5px;
+  margin: 8px;
+  font-size: 30px;
+}
+
+.images-portfolio img {
+  width: 348px;
+  height: 252px;
+}
+
+.images-portfolio {
+  margin: 13px;
+  display: inline-block;
+}
+
+/*****SECTION 3******/
 
 .about {
-  outline: 1px solid blue;
+  color: white;
   width: inherit;
   height: 578px;
+  background-color: #18bc9c;
+  text-align: center;
 }
 
+.about h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.text-1, .text-2 {
+  width: 25%;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 20px;
+  text-align: left;
+  margin: 15px;
+}
+
+.about a {
+  margin: 80px;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid white;
+  padding: 10px;
+  width: 210px;
+  border-radius: 5px;
+  position: relative;
+  left: 480px;
+  bottom: 55px;
+  letter-spacing: 0.5px;
+}
+
+/*****SECTION 4*****/
+
 .contac-me {
-  outline: 1px solid blue;
+  text-align: center;
   width: inherit;
   height: 937px;
 }
 
+form {
+
+  margin: 0 auto;
+  width: 730px;
+  height: 500px;
+}
+
+input, textarea {
+  display: block;
+  width: 720px;
+  height: 50px;
+  margin: 25px 0px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  color: #868e96;
+  outline: 0;
+}
+
+textarea {height: 200px;}
+
+.line {
+  width: inherit;
+  height: 1px;
+  background-color: #eeeeee;
+}
+button {
+
+  background-color: #18bc9c;
+  width: 77px;
+  height: 47px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+margin-top: 30px;
+float: left;
+}
+
 /***FOOTER**/
 
+footer {
+  background-color: #2c3e50;
+  color: white;
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
 .information {
-  outline: 1px solid orange;
   width: inherit;
   height: 269px;
+  display: inline-block;
 }
 
 .copyright {
   outline: 1px solid orange;
   width: inherit;
   height: 74px;
+  text-align: center;
+
+}
+
+.copyright span {
+margin: 0 auto;
 }
