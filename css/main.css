@@ -23,6 +23,7 @@ header {
 /*
  * Cabecera
  */
+
 nav, .title {
   display: inline-block;
   margin: 0 auto;
@@ -119,7 +120,7 @@ nav {
   text-align: center;
 }
 
-.portfolio h1, .contac-me h1 {
+.styleh1 {
   font-size: 3em;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -159,8 +160,11 @@ nav {
   display: inline-block;
   position: relative;
 }
+
 /*****efecto de hover zoom +********/
+
 .over-image {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -238,7 +242,8 @@ nav {
 
 /*****SECTION 4 - FOrmulario*****/
 
-.contac-me { /**contenedor*/
+.contac-me {
+  /**contenedor*/
   text-align: center;
   width: inherit;
   height: 800px;
@@ -266,7 +271,8 @@ textarea {
   height: 200px;
 }
 
-.line { /**línea entre inputs*/
+.line {
+  /**línea entre inputs*/
   width: inherit;
   height: 1px;
   background-color: #eeeeee;
@@ -374,4 +380,67 @@ footer {
 
 .freelancer a:hover {
   text-decoration: underline;
+}
+
+/*Estilos Modalea**/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index:3;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  text-align: center;
+}
+
+.modal-content {
+  background-color: white;
+}
+
+.style-h1-modal {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.modal p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+div img {
+  width: 700px;
+  height: 505px;
+}
+
+div figure {
+  margin: 20px auto 30px;
+}
+
+.modal-content p {
+  width: 700px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+/**Boton cerrar*/
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
